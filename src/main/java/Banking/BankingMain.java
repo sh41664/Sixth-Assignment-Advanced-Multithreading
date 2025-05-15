@@ -15,11 +15,15 @@ public class BankingMain {
         Thread[] threads = new Thread[4];
         for(int i = 1; i <= 4; i++){
             String fileName = i + ".txt";
-            threads[i - 1] = new Thread(new TransactionProcessor(accounts.get(i - 1), fileName, accounts));
+            threads[i - 1] = new Thread(new TransactionProcessor(accounts.get(i - 1), fileName, accounts),"Thread-" + (i));
         }
 
         for(Thread thread : threads){
             thread.start();
+        }
+
+        for(Thread thread : threads){
+            thread.getState();
         }
 
         for(Thread thread : threads){
