@@ -18,23 +18,19 @@ public class BankingSystemTest {
     }
 
     @Test
-    void testAccount1(){
-        assertEquals(bankAccounts.get(0).getBalance(), 18900);
+    void testAccount1(){assertEquals(bankAccounts.get(0).getBalance(), 18900);
     }
 
     @Test
-    void testAccount2(){
-        assertEquals(bankAccounts.get(1).getBalance(), 27170);
+    void testAccount2(){assertEquals(bankAccounts.get(1).getBalance(), 27170);
     }
 
     @Test
-    void testAccount3(){
-        assertEquals(bankAccounts.get(2).getBalance(), 21400);
+    void testAccount3(){assertEquals(bankAccounts.get(2).getBalance(), 21400);
     }
 
     @Test
-    void testAccount4(){
-        assertEquals(bankAccounts.get(3).getBalance(), 10010);
+    void testAccount4(){assertEquals(bankAccounts.get(3).getBalance(), 10010);
     }
 
 }
